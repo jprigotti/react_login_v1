@@ -12,6 +12,7 @@ export const AUTH_TYPES = {
 }
 
 export const AUTH_KEY_LOCAL_STORAGE = "auth";
+
 export const authInitializer = (initialValue = authInitialState) => {
     return JSON.parse(localStorage.getItem(AUTH_KEY_LOCAL_STORAGE)) || initialValue;
 }

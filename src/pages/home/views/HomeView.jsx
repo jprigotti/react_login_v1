@@ -2,10 +2,11 @@ import React from 'react'
 import { useAuth } from '../../../hooks/useAuth'
 
 const HomeView = () => {
-    const {logout, user} = useAuth();
+    const {logout, user, signout} = useAuth();
 
     const handleLogout = () => {
         logout();
+        signout();
     }
 
     return (
